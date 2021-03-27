@@ -523,6 +523,10 @@ V9958_CON_PUTCHAR::
     nop
     nop
     nop
+    nop  
+    nop
+    nop
+    nop
     move.b  #0,(A0)                       ; Overwrite possible cursors
     nop  
     nop  
@@ -531,10 +535,18 @@ V9958_CON_PUTCHAR::
     nop
     nop
     nop
+    nop  
+    nop
+    nop
+    nop
     move.b  #0,(A0)                       ; This can go one byte out-of-bounds in
     nop                                   ; VRAM, but the display doesn't extend
     nop                                   ; for the whole page anyway...
     nop  
+    nop  
+    nop
+    nop
+    nop
     nop  
     nop
     nop
